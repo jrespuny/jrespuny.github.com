@@ -1,1 +1,129 @@
-www.jrespuny.com
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Your description goes here" />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Your Name" />
+	<link rel="stylesheet" type="text/css" href="variant-light.css" title="iOS developer" media="screen,projection" />
+	<link rel="stylesheet" href="style.css" />
+	<title>jrespuny v1.0</title>
+</head>
+
+<body>
+<div id="header">
+	<div id="title">
+		<h1><a href="index.html">jrespuny.com</a></h1>
+		<p class="slogan">Design is not just what it looks like and feels like. Design is how it works</p>
+	</div>
+</div>
+
+<div id="topmenu">
+	<p>
+		<strong class="hide">Main menu:</strong>
+		<a class="active" href="#">Home</a><span class="hide"> | </span>
+		<a href="about_us.html">About us</a><span class="hide"> | </span>
+		<a href="contact.html">Contact</a><span class="hide"> | </span>
+	</p>
+</div>
+<div id="wrap">
+<!--
+	<div id="sidebar">
+		<ul class="sidemenu">
+			<li><a class="active" href="#">Active page</a></li>  
+			<li><a href="#">Link two</a></li>
+			<li><a href="#">Link three</a></li>
+			<li><a href="#">Link four</a>
+				<ul>
+					<li><a href="#">Sub one</a></li>
+					<li><a href="#">Sub two</a></li>
+				</ul></li>
+			<li><a href="#">Link five</a></li>
+		</ul>
+		
+		<h2>Sample link list</h2>
+		<p>Use ul class="sidemenu" for the menu above and a regular ul element for the kind of list below:</p>
+		<ul>
+			<li><a href="http://andreasviklund.com/learn/tutorial-building-your-first-website-using-a-free-website-template-part-1/">Template tutorial</a></li>
+			<li><a href="http://andreasviklund.com/templates/">More free templates</a></li>  
+			<li><a href="http://andreasviklund.com/wordpress-themes/">WordPress themes</a></li>
+			<li><a href="http://www.svenskadomaner.se/order.asp?step=1&amp;ling=en&amp;ref=A">Domains and hosting</a></li>
+		</ul>
+	</div>
+-->	
+	<ul id="slideshow">
+		<li>
+			<h3>CityPlan</h3>
+			<span>photos/cityplan.jpg</span>
+			<p>Lets you search and find businesses around categories, the distance from where you are and the routes on a map, bids offered, the feedback of other users, etc. In addition, you can share all this information via email, facebook and twitter and receive automatic notification.</p>
+			<a href="http://itunes.apple.com/es/app/cityplan/id490965184?mt=8"><img src="thumbnails/cityplan.jpg" alt="CityPlan" /></a>
+		</li>
+		<li>
+			<h3>ANUARIO DEL DEPORTE VALENCIANO 2011</h3>
+			<span>photos/ADV2011.jpg</span>
+			<p>Valencian sport Yearbook PDF viewer.</p>
+			<a href="http://itunes.apple.com/es/app/anuario-del-deporte-valenciano/id496844165?mt=8"></a><img src="thumbnails/ADV2011.jpg" alt="ADV 2011" /></a>
+		</li>
+		<li>
+			<h3>Aplicaci&oacute;n oficial Global Enterpreneurship Week Spain 2011</h3>
+			<span>photos/IESE.jpg</span>
+			<p>Discover all the proposed activities, leading entrepreneurs of the 2010 and 2011, leading sponsors and partners who have made made this new edition in Spain.</p>
+			<a href="http://itunes.apple.com/es/app/aplicacion-oficial-global/id476623955?mt=8&ls=1"><img src="thumbnails/IESE.jpg" alt="IESE Enterpreneurship Week" /></a>
+		</li>
+	</ul>
+	<div id="wrapper">
+		<div id="fullsize">
+			<div id="imgprev" class="imgnav" title="Previous Image"></div>
+			<div id="imglink"></div>
+			<div id="imgnext" class="imgnav" title="Next Image"></div>
+			<div id="image"></div>
+			<div id="information">
+				<h3></h3>
+				<p></p>
+			</div>
+		</div>
+		<div id="thumbnails">
+			<div id="slideleft" title="Slide Left"></div>
+			<div id="slidearea">
+				<div id="slider"></div>
+			</div>
+			<div id="slideright" title="Slide Right"></div>
+		</div>
+	</div>
+<script type="text/javascript" src="compressed.js"></script>
+<script type="text/javascript">
+	$('slideshow').style.display='none';
+	$('wrapper').style.display='block';
+	var slideshow=new TINY.slideshow("slideshow");
+	window.onload=function(){
+		slideshow.auto=true;
+		slideshow.speed=7;
+		slideshow.link="linkhover";
+		slideshow.info="information";
+		slideshow.thumbs="slider";
+		slideshow.left="slideleft";
+		slideshow.right="slideright";
+		slideshow.scrollSpeed=4;
+		slideshow.spacing=5;
+		slideshow.active="#fff";
+		slideshow.init("slideshow","image","imgprev","imgnext","imglink");
+	}
+</script>
+	
+	<div id="content">
+		<div class="post">
+			
+			<h2>Innovation distinguishes between a leader and a follower</h2>
+			<p>
+			Competition is always present with a click of an iPhone without being limited to one place and waiting for a machine power on.<br>
+			Are you in the competition?
+			</p>
+		</div>
+	</div>	
+</div>
+<div id="footer">
+	<p>Copyright &copy; 2012 <a href="mailto:jrespuny@gmail.com">Juan Ram&oacute;n Espuny</a></p>
+</div>
+
+</body>
+</html>
